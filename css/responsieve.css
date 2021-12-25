@@ -1,0 +1,96 @@
+@media(max-width: 767px){
+  #home .home-text,
+  #home .home-img ,
+  #about .about-img ,
+  #about .about-info ,
+  .portfolio-popup .description,
+  .portfolio-popup .info,
+  #contact .w-50{
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  #portfolio .portfolio-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+  #home .home-text{
+    order: 2;
+    text-align: center;
+  }
+  #home .home-section{
+    padding: 100px 0;
+  }
+  #home .home-img .img-box {
+    margin-bottom: 40px;
+    max-width: 350px;
+  }
+  .effect-1{
+    visibility: hidden;
+  }  
+  /* about section */
+  #about .about-info p,
+  #about .about-link{
+    margin: 15px;
+  }
+  /* skill section */
+  #skill .timeline .timeline-item:nth-child(odd) {
+    padding-right: 15px;
+    text-align: left;
+    padding-left: 75px;
+  }
+  #skill .timeline .timeline-item:nth-child(even) {
+    padding-left: 75px;
+  }
+  #skill .timeline::before{
+    left: 35px;
+  }
+  #skill .timeline .timeline-item:nth-child(odd) .icon{
+    right: auto;
+    left: -60px;
+  }
+  #skill .timeline .timeline-item:nth-child(even) .icon{
+    left: -60px;
+  }
+  #skill .timeline .timeline-item:nth-child(odd) .timeline-item-inner::before{
+    left: -30px;
+    right: auto;
+  }
+  #skill .timeline .timeline-item{
+    margin-bottom: 20px;
+  }
+  #skill .timeline .timeline-item:last-child{
+    margin-bottom: 0;
+  }
+  #contact .contact-form .row:last-child{
+    margin: 15px;
+    flex-direction: column;
+  }
+
+
+} 
+/* ------ max-width 574px ------------------ */
+@media (max-width:574px) {
+  #home .home-img .img-box{
+    margin-bottom: 20px;
+    max-width: 250px;
+  }
+  .effect-1{
+    visibility: hidden;
+  }  
+  #home .home-text h2{
+    font-size: 35px;
+  }
+  .btn-1{
+    margin-top: 20px;
+  }
+  /* skill section */
+  #portfolio .portfolio-item,
+  #skill .skills .skill-item,
+  #services .service-item{  
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}

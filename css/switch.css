@@ -1,0 +1,73 @@
+.switch-mode{
+    position: fixed;
+    width: 250px;
+    top: 65px;
+    right: 10px;
+    box-shadow: var(--outer-shadow);
+    padding: 15px;
+    border-radius: 5px;
+    padding-bottom: 2px;
+    transform: translateX(105%);
+    z-index: 999;
+    transition: .5s ease-in-out;
+}
+.switch-mode.open{
+    transform: translateX(-15px);
+}
+.switch-toggle,
+.day-night{
+    box-shadow: var(--outer-shadow);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 15px;
+    right: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.switch-toggle{
+    top: 0;
+}
+.day-night{
+    top: 45px;
+}
+.switch-toggle i,
+.day-night i{
+    line-height: 40px;
+}
+.switch-mode h4{
+    margin: 10px 0 0;
+    font-size: 17px;
+    color: var(--text-700);
+}
+.switch-mode .color{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.switch-mode .colors span{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.switch-mode .color-1{
+    background-color: #D47AE8;
+}
+.switch-mode .color-2{
+    background-color: #FFE400;
+}
+.switch-mode .color-3{
+    background-color: #1fc586;
+}
+.switch-mode .color-4{
+    background-color: #84DFFF;
+}
+.switch-mode .color-5{
+    background-color: #EC255A;
+}
