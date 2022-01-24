@@ -391,7 +391,10 @@ a{
     box-shadow: var(--inner-shadow);
 }
 #home .home-img .img-box{
-    max-width: 450px;
+    /*max-width: 450px;*/
+    /*max-height: 450px;*/
+    width: 450px;
+    height: 450px;
     display: block;
     margin: auto;
     border-radius: 50%;
@@ -400,21 +403,22 @@ a{
 }
 #home .home-img .img-box img{
     width: 100%;
+    height: 100%;
     border-radius: 50%;
     box-shadow: var(--outer-shadow);
     border: 5px solid var(--purple);
     border-bottom-color: cyan;
-    animation: imgCal 8s linear infinite;
+    /*animation: imgCal 8s linear infinite;*/
 }
-@keyframes imgCal{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+/*@keyframes imgCal{*/
+/*    0%{*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    100%{*/
+/*        transform: rotate(360deg);*/
+/*    }*/
 
-}
+/*}*/
 /* ---------- about section --------- */
 #about{
     padding: 50px 0 0;
@@ -426,7 +430,7 @@ a{
     padding: 0 15px;
 }
 #about .about-img .social-links{
-    margin: 15px 0 0 0;
+    margin: 15px 0 15px 0;
     text-align: center;
 }
 #about .about-img .social-links a{
@@ -456,16 +460,16 @@ a{
     color: var(--purple) !important;
 }
 #about .about-img .social-links a:nth-child(1){
-    color: red;
+    color: #0077b5;
 }
 #about .about-img .social-links a:nth-child(2){
-    color: green;
+    color: #00acee;
 }
 #about .about-img .social-links a:nth-child(3){
-    color: blue;
+    color: #171515;
 }
 #about .about-img .social-links a:nth-child(4){
-    color: yellowgreen;
+    color: #075e54;
 }
 #about .about-info{
     padding: 0 15px;
@@ -476,6 +480,7 @@ a{
     box-shadow: var(--inner-shadow);
     padding: 15px;
     border-radius: 5px;
+    height: 450px;
     /* border: 5px solid rgb(83, 236, 241); */
     animation: about-anime 2s linear infinite alternate; 
 }
@@ -488,6 +493,7 @@ a{
     }
 }
 #about .img-box img{
+    height: 100%;
     width: 100%;
     border-radius: 5px;
     box-shadow: var(--outer-shadow);
@@ -644,7 +650,7 @@ a{
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 0px;
+    top: 0;
     text-align: center;
     line-height: 40px;
     border: 1px solid var(--purple);
@@ -1010,6 +1016,8 @@ a{
 }
 #testimonial .testimonial-item img{
     max-width: 100px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
     border-radius: 50%;
     padding: 8px;
